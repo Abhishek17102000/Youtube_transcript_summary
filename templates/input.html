@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Emotions</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h1>Movie Recommendation Flask App</h1>
+    <form action="recommendations" method="POST">
+        <table cellspacing="10px" cellpadding="10%">
+
+            <tr>
+                <td>
+
+                    <label for="emotion" id="emotion">What is your Emotion Today</label>
+                </td>
+                <td>
+                    <select name="emotion" id="emotion">
+                        <option value="drama">Sad</option>
+                        <option value="action">Excited</option>
+                        <option value="comedy">Happy</option>
+                        <option value="family">Anger</option>
+                        <option value="thriller">Anticipation</option>
+                        <option value="action">Fear</option>
+                        <option value="thriller">Enjoyment</option>
+                        <option value="western">Trust</option>
+                        <option value="film-noir">Surprise</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="war">Revenge</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sort" id="sort">Sort By</label>
+                </td>
+                <td>
+                    <select name="sort" id="sort">
+                        <option value="alpha">A-Z</option>
+                        <option value="user_rating">User Rating</option>
+                        <option value="num_votes">Number of Votes</option>
+                        <option value="runtime">Movie Time</option>
+                        <option value="release_date">Release Date</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="asc" id="asc">Ascending/Descending</label>
+                </td>
+                <td>
+                    <select name="asc" id="asc">
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
